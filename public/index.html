@@ -27,7 +27,21 @@
                 </br>then send name with value in the body.</br>
                  if there is a series with this name, you will get a response in json view with this series</br>
                     message error in json view otherwise</p>
-                <p></br><span class="label label-danger">example of this error message</span></br>
+                <p><span class="label label-success">example of success message by json view</span></br>
+                {</br>
+                  "your request": {</br>
+                    "id": 2,</br>
+                    "seriesName": "lost",</br>
+                    "season": [</br>
+                      "4",</br>
+                      "5",</br>
+                      "6"</br>
+                    ],</br>
+                    "channel": 13,</br>
+                    "category": "action"</br>
+                  }</br>
+                }</p>
+                <p></br><span class="label label-danger">example of error message</span></br>
                 {</br>
                       "error": "series not found by name"</br>
                     }</p>
@@ -71,7 +85,7 @@
                   ]</br>
                 }</br>
                 </p>
-                <p></br><span class="label label-danger">example of this error message</span></br>
+                <p></br><span class="label label-danger">example of error message</span></br>
                 {</br>
                         "error": "series not found by channel+category"</br>
                     }</p>
