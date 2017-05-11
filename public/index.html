@@ -7,8 +7,77 @@
 </head>
 <body>
     <div class="container">
-        <h1>API RecordsSeries</h1>
+        <h1>API Records Series</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Present your series records:</div>
+            <div class="panel-body">
+                <span class="label label-info">http verb:get</span></br>
+                <span class="label label-primary">/showAllRecords</span>
+                <p>if you would like to see all your series records you will have to go into this link:</br>
+                <a href="https://vodrecords.herokuapp.com/showAllRecords">https://vodrecords.herokuapp.com/showAllRecords</a>
+                </br>you will get a response in json view</p>
+            </div>
+            <div class="panel-heading">
+            Looking for series by series's name:</div>
+            <div class="panel-body">
+                <span class="label label-info">http verb:post</span></br>
+                <span class="label label-primary">/findSeriesByName</span>
+                <p>if you would like to looking for series by series's name you will have to go into this link: </br>
+                <a href="https://vodrecords.herokuapp.com/findSeriesByName">https://vodrecords.herokuapp.com/findSeriesByName</a>
+                </br>then send name with value in the body.</br>
+                 if there is a series with this name, you will get a response in json view with this series</br>
+                    message error in json view otherwise</p>
+                <p></br><span class="label label-danger">example of this error message</span></br>
+                {</br>
+                      "error": "series not found by name"</br>
+                    }</p>
 
+            </div>
+            <div class="panel-heading">
+            Looking for series by series's channel and category:</div>
+            <div class="panel-body">
+                <span class="label label-info">http verb:post</span></br>
+                <span class="label label-primary">/getSeries</span>
+                <p>if you would like to looking for series by series's channel and series category you will have to go into this link:
+                </br><a href="https://vodrecords.herokuapp.com/getSeries">https://vodrecords.herokuapp.com/getSeries</a>
+                </br>then send channel with value and category with value in the body.</br>
+                 if there is a series with this channel <mark>and</mark> this category, you will get a response in json view with all of series with this channel and this category</br>
+                    message error in json view otherwise</p>
+                <p><span class="label label-success">example of success message by json view</span></br>
+                {</br>
+                  "match series ": [</br>
+                    {</br>
+                      "id": 1,</br>
+                      "seriesName": "girls",</br>
+                      "season": [</br>
+                        "1",</br>
+                        "2",</br>
+                        "3"</br>
+                      ],</br>
+                      "channel": 12,</br>
+                      "category": "drama"</br>
+                    },</br>
+                    {</br>
+                      "id": 3,</br>
+                      "seriesName": "grey's anatomy",</br>
+                      "season": [</br>
+                        "10",</br>
+                        "11",</br>
+                        "12"</br>
+                      ],</br>
+                      "channel": 12,</br>
+                      "category": "drama"</br>
+                    }</br>
+                  ]</br>
+                }</br>
+                </p>
+                <p></br><span class="label label-danger">example of this error message</span></br>
+                {</br>
+                        "error": "series not found by channel+category"</br>
+                    }</p>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>

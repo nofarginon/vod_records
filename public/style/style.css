@@ -1,10 +1,10 @@
 body{
-    background-image: url("images/VOD.jpg");
+    background-image: url("../images/VOD.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 .container{
-    opacity: 0.7;
+    opacity: 0.9;
     background-color:#ffffff; 
 }
