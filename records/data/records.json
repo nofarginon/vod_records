@@ -1,0 +1,34 @@
+{
+    "SatelliteTV":"yes",
+    "RecordsSeries":[{
+        "id":1,
+        "seriesName":"girls",
+        "season":[ "1", "2", "3" ],
+        "channel":12,
+        "category":"drama"
+    },{
+        "id":2,
+        "seriesName":"lost",
+        "season":[ "4", "5", "6" ],
+        "channel":13,
+        "category":"action"
+    },{
+        "id":3,
+        "seriesName":"grey's anatomy",
+        "season":[ "10", "11", "12" ],
+        "channel":12,
+        "category":"drama"
+    },{
+        "id":4,
+        "seriesName":"prison break",
+        "season":[ "1", "2", "3" ],
+        "channel":13,
+        "category":"action"
+    },{
+        "id":5,
+        "seriesName":"criminal minds",
+        "season":[ "13", "14", "15" ],
+        "channel":13,
+        "category":"action"
+    }]
+}
