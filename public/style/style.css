@@ -4,7 +4,9 @@ body{
     background-repeat: repeat-y;
 }
 
+
 .container{
     opacity: 0.9;
     background-color:#ffffff; 
+    font-family: 'Quantico', sans-serif;
 }
